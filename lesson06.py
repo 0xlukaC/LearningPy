@@ -29,7 +29,7 @@ queue.append(20)
 queue.append(30)
 
 print(queue.popleft()) # left because theres a pointer on the left (returns 10)
-print(queue.queue[1])
+#print(queue.remove[1])
 
 
 
