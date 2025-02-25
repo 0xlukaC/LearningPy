@@ -1,15 +1,15 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 
-
-def add_sum(num1, num2):
+def add(num1, num2):
     return print(num1 + num2)
 
-
-def calculate_total(priceList, discount=10):
+def calculate_total(prices, discount=10):
     total = 0
-    for x in priceList:
+    for x in prices:
         total += x
-    return total * (1 - discount / 100)
+    return total*((100 - discount)/100)
 
+mylist = [43, 34, 12, 5]
 
-print(f"{calculate_total([1, 2, 3, 4], 10):.2f}")
+print(calculate_total(mylist, 10))
+

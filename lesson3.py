@@ -1,27 +1,26 @@
-#!/usr/bin/python3
+#!/usr/bin/python
+#bools
+
+is_sunny = True
+is_cloudy = False
+
+a = True
+b = False
+
+print (a && b)
+print(a || b)
+print(!a)
+print(a and b)
+print(a or b)
+print(not a)
+print(not not not a)
 
 
-def forLoop():
-    for i in range(1, 20):
-        print(i)
 
+#range:
+# arg 1, the end(exclusive)
+# arg 2, the start (inc)
+# arg 3, step (how much it moves by
 
-def fizzbuzz(i):
-    if i % 3 == 0 and i % 5 == 0:
-        print("fizzbuzz")
-    elif i % 3 == 0:
-        print("Fizz")
-    elif i % 5 == 0:
-        print("Buzz")
-    return str(i)
-
-
-def betterFizzBuzz(i):
-    return print((("Fizz" * (not i % 3)) + ("Buzz" * (not i % 5))) or str(i))
-
-
-# forLoop()
-betterFizzBuzz(3)  # Fizz
-betterFizzBuzz(5)  # Buzz
-betterFizzBuzz(15)  # FizzBuzz
-betterFizzBuzz(7)  # 7
+for i in range(0, 51, 3):
+    print(i)
