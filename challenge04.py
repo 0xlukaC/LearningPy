@@ -5,4 +5,7 @@ def createtable():
     return [f"{i}: {chr(i)} " for i in range(32, 126)]
 
 
-print("".join(createtable()))
+# print("".join(createtable()))
+
+f = "".join(["1", "2", "3"])  # joins without spaces
+print(f)
