@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form
+			action="/form"
+			method="post"
+			onsubmit="event.preventDefault(); submitform(this);"
+		>
+			<p>Enter name:</p>
+			<br />
+			<input type="text" name="name" />
+			<p>Favorite icecream:</p>
+			<input type="text" name="icecream" />
+			<!-- <button onclick="submitform(this.parent)">Submit</button> -->
+			<!-- can also use type="submit" -->
+			<button type="submit">Submit</button>
+		</form>
+		<p id="response">hai</p>
+
+		<script>
+			function submitform(form) {
+				// 	const formData = new FormData(form);
+				// 	console.log(form);
+				// 	fetch("/form", { method: "POST", body: FormData })
+				// 		.then((response) => response.text())
+				// 		.then((data) => {
+				// 			document.getElementById("response").innerText = data;
+				// 		});
+				// }
+
+				const formData = new FormData(form);
+
+				fetch("/form", {
+					method: "POST",
+					body: formData
+				})
+					.then((response) => response.text())
+					.then((data) => {
+						document.getElementById("response").innerText = data;
+					});
+			}
+		</script>
+	</body>
+</html>
