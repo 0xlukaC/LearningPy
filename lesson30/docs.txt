@@ -1,0 +1,24 @@
+      Answer in 3-4 bullet points:
+        ◦ Why is it important to have both an SRS and an SDD in the software development lifecycle?
+
+    Research the following links (supplementing with your own research where you feel it is necessary) and answer the following questions:
+            ▪ Research Links:
+https://www.cio.com/article/288541/developer-6-software-development-lessons-from-healthcare-gov-s-failed-launch.html  https://www.npr.org/sections/alltechconsidered/2013/11/19/246132770/this-slide-shows-why-healthcare-gov-wouldnt-work-at-launch
+            ▪ What system was investigated any why?
+            ▪ Which documents (SRS and/or SDD) may have been reviewed by investigators and which parts of these would have interested them?
+
+
+Importance of SRS and SDD:
+
+The Software Requirements Specification (SRS) defines what the system should do, bringing clarity and alignment between stakeholders.
+The Software Design Document (SDD) outlines how the system will achieve the requirements, essentially a blueprint.
+Together, they reduce miscommunication, improve planning and allocated work throughout the development lifecycle.
+
+
+
+
+Concerning the Healthcare.gov, the U.S. federal health insurance marketplace website. Its launch in 2013 was a major failure and experienced crashes, login errors, and performance issues. It failed under real-world load, leaving users unable to access healthcare services.
+
+likley both
+SRS to check if clear, realistic, and testable requirements for system performance, user capacity, security, and availability were properly documented.
+SDD to evaluate whether the system’s architecture was planned to meet those requirements.
