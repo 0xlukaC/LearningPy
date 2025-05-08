@@ -1,0 +1,15 @@
+Three main parts of a class in UML class diagrams:
+
+class Name/top section: shows the name of the class.
+
+middle section/attributes: lists the data members/variables of the class, with types and visibility.
+
+Operations (Methods): lists the functions the class can perform, with parameters, return types, and visibility.
+
+Two benefits of designing classes using UML before coding:
+
+Clear structure and planning:
+Visualizes class relationships, responsibilities, and interactions before implementation.
+
+Better team communication:
+Acts as a shared, understandable blueprint for developers, reducing misunderstandings.
