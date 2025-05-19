@@ -1,0 +1,41 @@
+• Write a text file, pattern.txt, and answer the following:
+    Answer in 3-4 bullet points:
+        ◦ Research the following link (supplementing with your own research where you feel it is necessary) and answer the following questions:
+
+            ▪ Research Links: https://refactoring.guru/design-patterns/builder
+            ▪ What is the Builder design pattern?
+            ▪ Summarise the problem it intends to solve by using a ‘Build-A-Bear’ analogy (a brand which allows customers to build their own bear toys)
+
+1. 
+Builder is a creational design pattern that lets you construct complex objects step by step
+The Builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called builders
+useful for when you need a bunch of properties 
+
+Concrete builders are supposed to provide their own
+    methods for retrieving results. That's because various
+    types of builders may create entirely different products
+    that don't all follow the same interface.
+
+    Builder - interface
+    Concrete Builders
+    Products
+    Director
+    Client
+
+So basically you can create certain classes called concrete builders which have a long list of methods that set parameters. It inherits these methods from a builder interface (It will also usually have a reset method)
+The director can define the steps in which the construction steps/methods. 
+
+client can do 
+b = new Concretebuilder1()   (then they would call each method)
+or
+d = new Director(b)
+
+
+builabear analogy:
+- concrete builders: Superhero bear, birthday bear
+- Builder interface would include methods such as reset, clothes, voice, colour, etc.
+- Director: While this isnt strictly nessasary, there could be premade bears for sale.
+
+
+
+Product(s): The finished bear, changing on what you picked.
