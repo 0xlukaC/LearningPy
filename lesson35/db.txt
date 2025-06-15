@@ -1,0 +1,19 @@
+In the context of databases, what does the CRUD acronym stand for?
+  Create, Read Update, Delete
+
+
+
+◦ Which SQL commands typically map to each CRUD operation?
+CREATE: Creating new table or adding new records to a database using the INSERT statement.
+READ: Retrieving records from a database using the SELECT statement.
+UPDATE: Modifying existing records in a database using the UPDATE statement.
+DELETE/DROP: Removing records from a database using DELETE statement or removing a whole table via DROP
+
+
+Answer in 1-2 bullet points:
+  ◦ Why is the ‘?’ used as a placeholder instead of, say, an f-string when we defined SQL commands in our example program above?
+he ? placeholder safely separates SQL code from user-supplied data, preventing SQL injection attacks.
+
+It lets the database driver handle proper escaping and type conversion, which f-strings wouldn’t — f-strings directly interpolate values into the query string, risking security issues.
+
+
