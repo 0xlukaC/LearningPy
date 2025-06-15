@@ -1,0 +1,9 @@
+◦ What is algorithmic bias, and how can it affect real-world decision making?
+    Algorithmic bias occurs when systematic errors in machine learning algorithms produce unfair or discriminatory outcomes. It often reflects or reinforces existing socioeconomic, racial and gender biases
+
+
+◦ Why was the COMPAS sentencing algorithm criticised for being unfair?
+a risk assessment tool used in the US criminal justice system to predict the likelihood of an individual re-offending. It unfairly profiled individuals based on ethnicity.
+
+◦ What strategies can developers use to reduce bias when designing software?
+Know what data is being fed and test whether it is reliable before prod
