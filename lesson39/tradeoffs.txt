@@ -1,0 +1,33 @@
+• Write a text file, tradeoffs.txt, and answer the following:
+      Answer in 3–4 bullet points:
+        ◦ List three trade-offs developers might consider when selecting a database
+        ◦ Describe a scenario where Flask might be preferred over Django (we have practiced Flask; you will need to do some research on Django)
+        ◦ Explain how project goals such as timeline or user base affect tool selection
+
+
+ SQL vs NoSQL
+SQL: Relational databases, structured schema, strong consistency.
+NoSQL: Flexible schema, supports large datasets, better for unstructured data.
+
+4. Normalization vs Denormalization
+Normalization: Organizing data to reduce redundancy, increases efficiency.
+Denormalization: Adding redundancy to improve read speed.
+
+5. Consistency vs Availability
+Consistency: Ensuring all users see the same data at any time.
+Availability: Ensuring the system is always operational, even if some nodes are down.
+
+https://noncodersuccess.medium.com/10-essential-system-design-trade-offs-you-cant-ignore-2b4f0374cf5f
+
+flask vs Django
+• Flask might be preferred over Django in scenarios where:
+  ◦ The project is small or has a simple structure, allowing for quick development.
+  ◦ Developers require more flexibility and control over the components used in the application.
+  ◦ The team is familiar with Flask and prefers its lightweight nature for rapid prototyping.
+
+project goals:
+• Project goals such as timeline or user base can significantly affect tool selection:
+  ◦ A tight timeline may favor tools that allow for rapid development and deployment, such as Flask.
+  ◦ A larger user base may require more robust frameworks like Django that offer built-in features for scalability and security.
+  ◦ Long-term maintenance and support considerations may lead to choosing a framework with a larger community and better documentation.
+  ◦ Budget constraints might influence the choice of open-source tools versus commercial solutions.

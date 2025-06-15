@@ -1,0 +1,17 @@
+      Answer in 6–7 bullet points:
+        ◦ Reflect on a time (real or imagined) when you had to choose between two tools or approaches while programming. Consider adding to your response:
+            ▪ What tools were involved and what made the decision difficult
+            ▪ What trade-offs did you consider (e.g., learning curve, documentation)
+            ▪ How did your values or goals influence the final choice
+        ◦ Imagine you are mentoring a new developer who must choose between Flask and Django for their first web project. Consider adding to your response:
+            ▪ What factors would you encourage them to consider and why
+            ▪ What advice would you give based on your own experiences
+            ▪ How would you help them decide for themselves, rather than choosing for themc
+
+    One time I had to decide on how I would deploy a webserver for a school project (In c). I tested a webserver with apache. however,
+     that was cumbersome and was difficult to set up with c and a restricted linux enviroment. I then chose to write my own webserver which took a lot more time and wasnt really beneficial in anyway
+     I valued having a good project to be showed off. In retrospect I should have just used apache and focused on the project itself rather than the webserver.
+
+
+     Choose flask because its more commonly used, easier to learn and fine for small projects. Django is more complex and has a steeper learning curve, which might be overwhelming for a new developer.
+    
