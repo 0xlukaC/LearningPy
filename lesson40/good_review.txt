@@ -1,0 +1,26 @@
+    • Write a text file, good_review.txt, study the following code fragment and answer the following:
+
+def is_prime(n):
+    """Return True if n is a prime number, otherwise return False."""
+    if n <= 1:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+
+    for i in range(3, int(n**0.5) + 1, 2):
+        if n % i == 0:
+            return False
+    return True
+
+        ◦ Note: A prime number is a whole number greater than 1 that has exactly two positive divisors: 1 and itself. In other words, it cannot be divided evenly by any other number
+      (Allow 3–4 bullet points for each prompt)
+        ◦ What programming practices make the function in this program easy to understand and maintain?
+        ◦ How does the function avoid unnecessary computation, and why is that beneficial?
+        ◦ What changes (if any) would you make to improve the readability or performance of this function for large numbers?
+
+It is easy to understand and maintain because: The function is well structured with clear logic and naming.
+    It avoids unnecessary computation by checking for even numbers first.
+    To improve readability, add more comments explaining each step. For performance, consider using something like the Sieve of Eratosthenes algo for very large numbers. 
+    also the if statements could be cleaned up syntactically.

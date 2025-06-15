@@ -1,0 +1,21 @@
+
+    • Write a text file, bad_review.txt, study the following code fragment and answer the following:
+
+def check(word):
+    a = ""
+    for i in range(len(word)-1,-1,-1):
+        a = a + word[i]
+    if a==word:
+        return True
+    else:
+        return False
+
+      (Allow 3–4 bullet points for each prompt)
+        ◦ Identify the intention for this function and suggest at least two ways this code could be improved for clarity, style, or performance
+        ◦ Suggest a more "Pythonic" way to reverse the string and explain how it improves readability
+        ◦ How could this function be adapted or extended (elegantly) if it needed to ignore spaces and capitalisation?
+
+        reverses a string and checks if it is a palindrome
+
+        just use a slice like word[::-1] to reverse the string, which is more readable and concise.
+        to ignore spaces and capitalization, you could use word.replace(" ", "").lower() before checking if it is a palindrome.
