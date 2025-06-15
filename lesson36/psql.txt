@@ -1,0 +1,36 @@
+. Create a new PostgreSQL database called my_cars
+        2. Connect to the database using psql
+        3. Create a table called cars with fields:
+            ▪ id (INTEGER PRIMARY KEY)
+            ▪ model (TEXT)
+            ▪ factory (TEXT)
+        4. Insert 5 cars into the table using INSERT INTO
+            ▪ e.g., Shelby Cobra (model) made by Shelby (factory)
+            ▪ e.g., Lotus Elise (model) made by Lotus (factory)
+            ▪ e.g., Skyline GTR (model) made by Nissan (factory)
+            ▪ e.g., M3 E30 (model) made by BMW (factory)
+        5. Run a SELECT query to list all of your cars
+        6. Run an UPDATE to change one of the models to another by the same factory
+        7. Run DELETE to remove one of your cars
+
+createdb my_cars
+psql my_cars
+
+CREATE TABLE cars (
+    id SERIAL PRIMARY KEY,
+    model TEXT,
+    factory TEXT
+);
+
+INSERT INTO cars (model, factory) VALUES
+('Shelby Cobra', 'Shelby'),
+('Lotus Elise', 'Lotus'),
+('Skyline GTR', 'Nissan'),
+('M3 E30', 'BMW'),
+('X5 M', 'BMW');
+
+SELECT * FROM cars
+
+UPDATE cars SET model = 'M5 CS' WHERE model = 'X5 M';
+
+DELETE FROM cars WHERE model = 'Skyline GTR';
