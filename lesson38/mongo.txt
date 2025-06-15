@@ -1,0 +1,33 @@
+• Write in-order the mongosh commands to do the following in a text file, mongo.txt:
+1. Create a new database called my_motorcycles
+2. Create a collection named garage
+3. Insert three documents with fields:
+    ▪ model
+    ▪ factory
+    ▪ with_mechanics (boolean)
+4. Insert 3 documents into the collection
+    ▪ e.g., Suzuki GSXR (model) made by Suzuki (factory)
+    ▪ e.g., Ducati 999 (model) made by Ducati (factory)
+5. Run a find() query to list all motorcycles which are not with the mechanics
+6. Change the with_mechanics field on one of your documents
+7. Delete one motorcycle from the collection
+
+
+use my_motorcycles
+
+db.createCollection(garage, {})
+
+db.collection.insertMany([
+  { model: "Suzuki GSXR", factory: "Suzuki", with_mechanics: false },
+  { model: "Ducati 999", factory: "Ducati", with_mechanics: true },
+  { model: "Kawasaki Ninja", factory: "Kawasaki", with_mechanics: false }
+])
+
+db.garage.find({ with_mechanics: false })
+
+db.garage.updateOne(
+    { model: "Ducati 999" },
+    { $set: { with_mechanics: false } } // $set operator to change the field
+)
+
+db.garage.deleteOne({ model: "Kawasaki Ninja" }) 
